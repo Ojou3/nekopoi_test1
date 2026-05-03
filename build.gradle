@@ -1,0 +1,13 @@
+ext {
+    extName = 'NekoPoi'
+    extClass = '.NekoPoi'
+    extVersionCode = 27
+    isNsfw = true
+}
+
+apply from: "$rootDir/common.gradle"
+
+dependencies {
+    implementation(project(':lib:cloudflareinterceptor'))
+    implementation(project(':lib:doodextractor'))
+}
